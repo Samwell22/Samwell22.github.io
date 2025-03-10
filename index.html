@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana Varel</title>
+    <style>
+        /* Gaya dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigasi */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ff6347; /* Warna saat hover */
+        }
+
+        /* Bagian utama */
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Gaya untuk setiap bagian */
+        #home {
+            background-color: #e2f3f5;
+        }
+
+        #gallery {
+            background-color: #f5e6e6;
+        }
+
+        #blog {
+            background-color: #e6f5e6;
+        }
+
+        #contact {
+            background-color: #f5f5e6;
+        }
+
+        /* Gaya untuk gambar di gallery */
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gaya untuk tautan blog dan review */
+        .blog-item {
+            margin: 20px 0;
+            text-align: left;
+            max-width: 600px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-link {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .blog-link:hover {
+            color: #ff6347;
+        }
+
+        .blog-review {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* Gaya untuk kontak */
+        .contact-info {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <header>
+        <h1>Website Sederhana Varel</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Home -->
+    <section id="home">
+        <h2>Selamat Datang Di Website Sederhana Varel :)</h2>
+        <p>Website ini merupakan website HTML murni tanpa menggunakan library atau framework apapun.</p>
+    </section>
+
+    <!-- Bagian Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="Images/foto1.jpg" alt="Foto 1">
+            <img src="Images/foto2.jpg" alt="Foto 2">
+            <img src="Images/foto3.jpg" alt="Foto 3">
+        </div>
+    </section>
+
+    <!-- Bagian Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-item">
+            <a class="blog-link" href="https://id.wikipedia.org/wiki/Dr._Stone" target="_blank">Dr. Stone</a>
+            <p class="blog-review">
+                Dr. Stone adalah sebuah serial anime dan manga yang menceritakan tentang seorang ilmuwan jenius, Senku, yang berusaha membangun kembali peradaban setelah seluruh umat manusia berubah menjadi batu. Ceritanya penuh dengan sains, petualangan, dan humor yang menarik!
+            </p>
+        </div>
+        <div class="blog-item">
+            <a class="blog-link" href="https://id.wikipedia.org/wiki/Frieren:_After_The_End" target="_blank">Frieren: After The End</a>
+            <p class="blog-review">
+                Frieren: After The End mengisahkan tentang seorang elf penyihir bernama Frieren yang menjelajahi dunia setelah kekalahan Raja Iblis. Cerita ini fokus pada refleksi tentang waktu, kehidupan, dan hubungan antar karakter. Sangat menyentuh dan mendalam!
+            </p>
+        </div>
+        <div class="blog-item">
+            <a class="blog-link" href="https://id.wikipedia.org/wiki/Haikyu!!_Fly_High!_Volleyball!" target="_blank">Haikyu!! Fly High! Volleyball!</a>
+            <p class="blog-review">
+                Haikyu!! adalah anime tentang olahraga voli yang penuh semangat. Mengikuti perjalanan Hinata dan Kageyama, dua pemain voli dengan kepribadian berlawanan, yang berusaha menjadi pemain terbaik. Ceritanya inspiratif dan penuh aksi seru!
+            </p>
+        </div>
+    </section>
+
+    <!-- Bagian Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:varelsumampouw026@student.unsrat.ac.id">varelsumampouw026@student.unsrat.ac.id</a></p>
+        <p class="contact-info">No. Telepon: 08971616331</p>
+    </section>
+</body>
+</html>
